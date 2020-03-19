@@ -25,8 +25,7 @@ const BodyMainDiv = styled.div`
     display: flex;
     img{
         margin-left: 10px;
-        width:700px;
-        height:700px;
+        max-width:70%;
     }
     p{
         margin-left: 10px;
