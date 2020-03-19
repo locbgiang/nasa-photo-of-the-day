@@ -1,8 +1,13 @@
 import React, { useState, useEffect } from "react";
 import "./App.css";
+import styled from 'styled-components';
 import PageHeader from "./PageHeader.js";
 import PageBody from "./PageBody.js";
 import axios from "axios";
+
+const PageWrapDiv = styled.div`
+    background-color: black;
+`;
 
 function App() {
   const [data, setData] = useState([]);
@@ -19,7 +24,7 @@ function App() {
   //console.log(image);
   return (
     <div className="App">
-
+      <PageWrapDiv>
       <PageHeader/>
       <PageBody 
         author = {data.copyright}
@@ -30,6 +35,7 @@ function App() {
       />
       <p>
       </p>
+      </PageWrapDiv>
     </div>
   );
 }
